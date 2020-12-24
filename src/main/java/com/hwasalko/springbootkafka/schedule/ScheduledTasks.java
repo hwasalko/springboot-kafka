@@ -17,6 +17,6 @@ public class ScheduledTasks {
 
 	@Scheduled(fixedRate = 1000)
 	public void reportCurrentTime() {
-		log.info("The time is now {}", dateFormat.format(new Date()));
+		log.info("현재 시간은 {}", dateFormat.format(new Date()));
 	}
 }
