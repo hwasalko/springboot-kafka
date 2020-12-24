@@ -1,4 +1,4 @@
-package com.hwasalko.springbootkafka.rest.vo;
+package com.hwasalko.springbootkafka.rest.greeting.vo;
 
 public class Greeting {
 
