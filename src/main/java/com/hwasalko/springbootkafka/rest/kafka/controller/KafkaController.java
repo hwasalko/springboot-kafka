@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/kafka")
 public class KafkaController {
     
-    private static Logger logger = LoggerFactory.getLogger(KafkaController.class);
-
+    
     @Autowired
     private KafkaService kafkaService;
 

@@ -1,10 +1,8 @@
 package com.hwasalko.springbootkafka.kafka;
 
-import java.util.Calendar;
 import java.util.Properties;
 import java.util.UUID;
 
-import org.apache.kafka.clients.Metadata;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
