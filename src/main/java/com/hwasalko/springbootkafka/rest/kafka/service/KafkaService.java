@@ -11,14 +11,12 @@ public class KafkaService {
     @Autowired
     private MyProducer myProducer;
 
-
-    // 메세지 전송
-    public void sendKafkaMessage(String topic_name, String message){
-        myProducer.send(topic_name, message);
-    }
-
+    // 메세지 Produce
     public void sendKafkaMessage(String message){
         myProducer.send("", message);
     }
+
+
+
 
 }

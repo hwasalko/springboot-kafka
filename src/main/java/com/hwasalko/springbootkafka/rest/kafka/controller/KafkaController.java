@@ -22,12 +22,11 @@ public class KafkaController {
     @GetMapping("/produce/{message}")
 	public String produceMessage(@PathVariable String message) {
         
-        logger.info("[파라미터] message => " + message );
-
-        logger.info("[kafka producer] message 발행 => " + message );
         kafkaService.sendKafkaMessage(message);
         
         return "Kafka Produce Message => " + message;
     }
+
+
 
 }
