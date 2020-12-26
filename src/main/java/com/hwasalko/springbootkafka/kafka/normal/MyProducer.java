@@ -1,4 +1,4 @@
-package com.hwasalko.springbootkafka.kafka;
+package com.hwasalko.springbootkafka.kafka.normal;
 
 import java.util.Properties;
 import java.util.UUID;
@@ -11,9 +11,10 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+
+//@Service
 public class MyProducer {
 
     private static Producer<String, String> producer;
@@ -73,7 +74,7 @@ public class MyProducer {
     }
 
 
-    @Scheduled(fixedRate = 5000)
+    //@Scheduled(fixedRate = 5000)
     private void messageProduceBatch(){
         send("", UUID.randomUUID().toString() );
     }

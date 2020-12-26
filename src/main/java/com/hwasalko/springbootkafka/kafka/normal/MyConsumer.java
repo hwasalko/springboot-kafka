@@ -1,4 +1,4 @@
-package com.hwasalko.springbootkafka.kafka;
+package com.hwasalko.springbootkafka.kafka.normal;
 
 import java.time.Duration;
 import java.util.Collections;
@@ -13,10 +13,10 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
-@Component
+//@Service
 public class MyConsumer {
     
     private static Logger logger = LoggerFactory.getLogger(MyConsumer.class);
@@ -54,7 +54,7 @@ public class MyConsumer {
 
 
     // 메세지 가져오기(1분마다 수행)
-    @Scheduled(fixedRate = 1000)
+    //@Scheduled(fixedRate = 1000)
     public void consume(){
         logger.info("---- (Kafka Consumer) Healthcheck !! ----");
         try {
